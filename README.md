@@ -1,2 +1,1 @@
 # stroke_prediction_binary_classification_CNN
-# stroke_binary_classification_CNN
