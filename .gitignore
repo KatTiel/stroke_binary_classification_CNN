@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 .ipynb_checkpoints
 .DS_Store
+stroke_binary_classification_CNN.ipynb
 
 # C extensions
 *.so
