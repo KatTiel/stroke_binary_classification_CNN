@@ -1,4 +1,4 @@
-## Stroke Prediction :brain: - Binary Classification using a Convolutional Neuronal Network
+## Stroke Prediction :brain: - Binary Classification Model using a Convolutional Neuronal Network
 The objective of this project was to develop a convolutional neural network (CNN) capable of predicting the likelihood of an ***impending*** stroke. 
 
 It is crucial to note that this CNN predicts an ***imminent*** stroke based on the combination of all predictors right in that moment. However, it's important to understand that even if for example a young person has risk factors which significanty increase the risk of stroke, like obesity, smoking, and hypertension, they may still face a much higher risk of stroke as they age but might being predicted as "No Stroke" using this model. This is due to the fact that advancing age itself is a significant risk factor for stroke. (1) 
