@@ -32,16 +32,13 @@ The dataset used for this model contains 12 attributes of 5110 patients. It was 
 ## Features
 Data exploration revealed that the dataset exhibits a significant imbalance of the target variable, with only 4% of individuals experiencing a stroke. To address this issue, a performance metric other than accuracy was chosen. Additionally, it was observed that hypertension and heart disease were notably underrepresented in the dataset. The choice of features for predictions was based on empirical studies that have identified these factors as significant contributors to stroke risk (3, 4).
 
-Selected predictors:
+*Selected predictors:*
 - age
 - hypertension
 - heart_disease
 - avg_glucose_level
 - bmi
 - smoking status 
-
-Target variable:
-- stroke
 
 ## Strategies to Diminish Overfitting (5)
 To avoid overfitting of the model, the following aspects were added:
