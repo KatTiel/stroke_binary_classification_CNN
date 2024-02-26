@@ -40,26 +40,26 @@ Data exploration revealed that the dataset exhibits a significant imbalance of t
 - bmi
 - smoking status 
 
-## Strategies to Diminish Overfitting (5)
+## Strategies to Diminish Overfitting
 To avoid overfitting of the model, the following aspects were added:
 
 ### Dropout
 Randomly selected neurons are dropped out or ignored with a certain probability. This encourages generalization as the network does not rely too heabily on individual neurons.
 
 ### Early Stopping
-During training, the model's performance on the validation set is monitored. The training is stopped and the weights are restored when the performance on the validation set diminishes. This prevents the model from learning noise in the training data. 
+During training, the model's performance on the validation set is monitored. The training is stopped and the weights are restored when the performance on the validation set diminishes. This prevents the model from learning noise in the training data (5).
 
-## Performance Measurements (5)
+## Performance Measurements
 ### Binary Accuracy
 Accuracy = Number of correctly classified instances/Total number of instances
 
 Initially, binary accuracy served as an intital performance marker for the ***validation*** set:
-Best *Validation* Accuracy: 0.9532
+:arrow_right: Best *Validation* Accuracy: 0.9532
 
 However, due to the dataset's imbalance, acccuracy proved inadequate as a performance measure. Instead, a Receiver Operating Characteristic (ROC) Curve was employed, with the Area Under the ROC Curve (AUC) serving as the performance indicator.
 
 ### ROC AUC
-ROC is a plot of True Positive Rate ('Recall': True Positives/True Positives+False Negatives)/False Positive Rate (FPR, 1- True Negative Rate(TNR))
+ROC = True Positive Rate ('Recall': True Positives/True Positives+False Negatives)/False Positive Rate (FPR, 1- True Negative Rate(TNR)) as a plot
 
 AUC = Area under the ROC curve which quantifies overall performance of a binary classifier
 
