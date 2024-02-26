@@ -75,9 +75,9 @@ The potential, detrimental consequences of overlooking the risk of an impending 
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## References 
-(1) Leening M.J., Cook N.R., Ridker P.M. Should we reconsider the role of age in treatment allocation for primary prevention of cardiovascular disease? Eur. Heart J. 2017;38:1542–1547. [doi: 10.1093/eurheartj/ehw287.](https://pubmed.ncbi.nlm.nih.gov/27357357/).
+(1) Leening M.J., Cook N.R., Ridker P.M. Should we reconsider the role of age in treatment allocation for primary prevention of cardiovascular disease? Eur. Heart J. 2017;38:1542–1547. [doi: 10.1093/eurheartj/ehw287.](https://pubmed.ncbi.nlm.nih.gov/27357357/)
 
-(2) fedesorian. Stroke Prediction Dataset, Version 1. Retrieved 12/2023 from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
+(2) fedesorian. Stroke Prediction Dataset, Version 1. Retrieved 12/2023 from [Kaggle.](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
 
 (3) Shu C, Zheng C, Luo D, Song J, Jiang Z, Ge L. Acute ischemic stroke prediction and predictive factors analysis using hematological indicators in elderly hypertensives post-transient ischemic attack. Sci Rep. 2024 Jan 6;14(1):695. [doi: 10.1038/s41598-024-51402-2.](https://www.nature.com/articles/s41598-024-51402-2)
 
