@@ -64,7 +64,7 @@ ROC = True Positive Rate ('Recall': True Positives/True Positives+False Negative
 
 AUC = Area under the ROC curve, quantifies overall performance of a binary classifier
 
-:arrow_right: AUC-Score of the predicted ***test*** data classes: 0.88 
+:arrow_right: AUC-Score of the predicted ***test*** data classes: 0.88 :heavy_exclamation_mark:
 
 An AUC-Score of 0.8-0.9 is considered excellent (6).
 
