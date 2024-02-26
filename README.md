@@ -51,7 +51,7 @@ During training, the model's performance on the validation set is monitored. The
 
 ## Performance Measurements
 ### Binary Accuracy
-<img width="166" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/5bb37c18-3795-4fc8-ae11-1c7374dd2a3f">
+<img width="161" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/7417c4b4-09d8-4dba-bb11-8e9e9dbebc1e">
 
 Initially, binary accuracy served as an intital performance marker for the ***validation*** set:
 
@@ -60,7 +60,7 @@ Initially, binary accuracy served as an intital performance marker for the ***va
 However, due to the dataset's imbalance, acccuracy proved inadequate as a performance measure. Instead, a Receiver Operating Characteristic (ROC) Curve was employed, with the Area Under the ROC Curve (AUC) serving as the performance indicator.
 
 ### ROC AUC
-ROC = True Positive Rate ('Recall': True Positives/True Positives+False Negatives)/False Positive Rate (FPR, 1- True Negative Rate(TNR)) as a plot
+<img width="261" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/0db359eb-5339-43c4-b493-3fea771dbfdf">
 
 AUC = Area under the ROC curve, quantifies overall performance of a binary classifier
 
