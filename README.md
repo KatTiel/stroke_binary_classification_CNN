@@ -1,7 +1,7 @@
 ## Stroke Prediction :brain: - Binary Classification using a Convolutional Neuronal Network
 The objective of this project was to develop a convolutional neural network (CNN) capable of predicting the likelihood of an ***impending*** stroke. 
 
-It's crucial to note that this CNN predicts an ***imminent*** stroke based on the combination of all predictors right in that moment. However, it's important to understand that even if for example a young person has risk factors which significanty increase the risk of stroke, like obesity, smoking, and hypertension, they may still face a much higher risk of stroke as they age but might being predicted as "No Stroke" using this model. This is due to the fact that advancing age itself is a significant risk factor for stroke. (1) 
+It is crucial to note that this CNN predicts an ***imminent*** stroke based on the combination of all predictors right in that moment. However, it's important to understand that even if for example a young person has risk factors which significanty increase the risk of stroke, like obesity, smoking, and hypertension, they may still face a much higher risk of stroke as they age but might being predicted as "No Stroke" using this model. This is due to the fact that advancing age itself is a significant risk factor for stroke. (1) 
 
 The predictions made by the model are not guaranteed and are based on probabilities. Encouraging a healthy lifestyle and and consultations with a primary care physician is always recommended as a preventive measure.
 
@@ -28,10 +28,10 @@ Attributes:
 
 - stroke (0/1) : Target variable
 
-## Model Architecture
-Data exploration revealed that the dataset exhibits a significant imbalance of the target variable, with only 4% of individuals experiencing a stroke. To address this issue, a performance metric other than accuracy was chosen. Additionally, it was observed that hypertension and heart disease were notably underrepresented in the dataset.
+## Features
+Data exploration revealed that the dataset exhibits a significant imbalance of the target variable, with only 4% of individuals experiencing a stroke. To address this issue, a performance metric other than accuracy was chosen. Additionally, it was observed that hypertension and heart disease were notably underrepresented in the dataset. The choice of features for predictions was based on empirical studies that have identified these factors as significant contributors to stroke risk (3, 4).
 
-The selected predictor variables for this CNN were:
+Selected predictors:
 - age
 - hypertension
 - heart_disease
@@ -39,20 +39,18 @@ The selected predictor variables for this CNN were:
 - bmi
 - smoking status 
 
-The target variable was:
+Target variable:
 - stroke
-
-This choice of features was based on empirical studies that have identified these factors as significant contributors to stroke risk (3, 4).
 
 The data was split into a **training set** (80%, 3927 records), a **validation set** (10%, 491 records) and a **test set** (10%, 491 records).
 
-### Strategies to Diminish Overfitting (5)
+## Strategies to Diminish Overfitting (5)
 To avoid overfitting of the model, the following aspects were added:
 
-#### Dropout
+### Dropout
 Randomly selected neurons are dropped out or ignored with a certain probability. This encourages generalization as the network does not rely too heabily on individual neurons.
 
-#### Early Stopping
+### Early Stopping
 During training, the model's performance on the validation set is monitored. The training is stopped and the weights are restored when the performance on the validation set diminishes. This prevents the model from learning noise in the training data. 
 
 ## Performance Measurements (5)
