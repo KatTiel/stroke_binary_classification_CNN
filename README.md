@@ -5,14 +5,13 @@ It's crucial to note that this CNN predicts an ***imminent*** stroke based on th
 
 The predictions made by the model are not guaranteed and are based on probabilities. Encouraging a healthy lifestyle and and consultations with a primary care physician is always recommended as a preventive measure.
 
-## How It Works
-### Prerequisites 
+## Prerequisites 
 - [Python 3.11](https://www.python.org/downloads/release/python-3110/)
 - Jupyter Notebook ```pip install notebook ```
 - [Required dependencies](https://github.com/KatTiel/stroke_binary_classification_CNN/blob/main/requirements.txt) ```pip install -r requirements.txt ```
 - Stroke Prediction [Dataset](https://github.com/KatTiel/stroke_binary_classification_CNN/blob/main/0_data/healthcare-dataset-stroke-data.csv) (2)
 
-### Data Set
+## Data Set
 The dataset used for this model contains 12 attributes of 5110 patients. 
 
 Attributes:
@@ -29,7 +28,7 @@ Attributes:
 
 - stroke (0/1) : Target variable
 
-### Model Architecture
+## Model Architecture
 Data exploration revealed that the dataset exhibits a significant imbalance of the target variable, with only 4% of individuals experiencing a stroke. To address this issue, a performance metric other than accuracy was chosen. Additionally, it was observed that hypertension and heart disease were notably underrepresented in the dataset.
 
 The selected predictor variables for this CNN were:
@@ -47,17 +46,17 @@ This choice of features was based on empirical studies that have identified thes
 
 The data was split into a **training set** (80%, 3927 records), a **validation set** (10%, 491 records) and a **test set** (10%, 491 records).
 
-#### Strategies to Diminish Overfitting (5)
+### Strategies to Diminish Overfitting (5)
 To avoid overfitting of the model, the following aspects were added:
 
-##### Dropout
+#### Dropout
 Randomly selected neurons are dropped out or ignored with a certain probability. This encourages generalization as the network does not rely too heabily on individual neurons.
 
-##### Early Stopping
+#### Early Stopping
 During training, the model's performance on the validation set is monitored. The training is stopped and the weights are restored when the performance on the validation set diminishes. This prevents the model from learning noise in the training data. 
 
-### Performance Measurements (5)
-#### Binary Accuracy
+## Performance Measurements (5)
+### Binary Accuracy
 Accuracy = Number of correctly classified instances/Total number of instances
 
 Initially, binary accuracy served as an intital performance marker for the ***validation*** set:
@@ -65,7 +64,7 @@ Best *Validation* Accuracy: 0.9532
 
 However, due to the dataset's imbalance, acccuracy proved inadequate as a performance measure. Instead, a Receiver Operating Characteristic (ROC) Curve was employed, with the Area Under the ROC Curve (AUC) serving as the performance indicator.
 
-#### ROC AUC
+### ROC AUC
 ROC is a plot of True Positive Rate ('Recall': True Positives/True Positives+False Negatives)/False Positive Rate (FPR, 1- True Negative Rate(TNR))
 
 AUC = Area under the ROC curve which quantifies overall performance of a binary classifier
