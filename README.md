@@ -51,7 +51,7 @@ During training, the model's performance on the validation set is monitored. The
 
 ## Performance Measurements
 ### Binary Accuracy
-Accuracy = Number of correctly classified instances/Total number of instances
+<img width="166" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/5bb37c18-3795-4fc8-ae11-1c7374dd2a3f">
 
 Initially, binary accuracy served as an intital performance marker for the ***validation*** set:
 
