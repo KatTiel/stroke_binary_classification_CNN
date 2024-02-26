@@ -11,7 +11,7 @@ The predictions made by the model are not guaranteed and are based on probabilit
 - [Required dependencies](https://github.com/KatTiel/stroke_binary_classification_CNN/blob/main/requirements.txt) ```pip install -r requirements.txt ```
 - Stroke Prediction [Dataset](https://github.com/KatTiel/stroke_binary_classification_CNN/blob/main/0_data/healthcare-dataset-stroke-data.csv) (2)
 
-## Data Set
+## Dataset
 The dataset used for this model contains 12 attributes of 5110 patients. 
 
 Attributes:
