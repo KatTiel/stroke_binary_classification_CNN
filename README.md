@@ -44,7 +44,7 @@ Data exploration revealed that the dataset exhibits a significant imbalance of t
 To avoid overfitting of the model, the following aspects were added:
 
 ### Dropout
-Randomly selected neurons are dropped out or ignored with a certain probability. This encourages generalization as the network does not rely too heabily on individual neurons.
+Randomly selected neurons are dropped out or ignored with a certain probability. This encourages generalization as the network does not rely too heavily on individual neurons.
 
 ### Early Stopping
 During training, the model's performance on the validation set is monitored. The training is stopped and the weights are restored when the performance on the validation set diminishes. This prevents the model from learning noise in the training data (5).
@@ -54,6 +54,7 @@ During training, the model's performance on the validation set is monitored. The
 Accuracy = Number of correctly classified instances/Total number of instances
 
 Initially, binary accuracy served as an intital performance marker for the ***validation*** set:
+
 :arrow_right: Best *Validation* Accuracy: 0.9532
 
 However, due to the dataset's imbalance, acccuracy proved inadequate as a performance measure. Instead, a Receiver Operating Characteristic (ROC) Curve was employed, with the Area Under the ROC Curve (AUC) serving as the performance indicator.
@@ -61,14 +62,14 @@ However, due to the dataset's imbalance, acccuracy proved inadequate as a perfor
 ### ROC AUC
 ROC = True Positive Rate ('Recall': True Positives/True Positives+False Negatives)/False Positive Rate (FPR, 1- True Negative Rate(TNR)) as a plot
 
-AUC = Area under the ROC curve which quantifies overall performance of a binary classifier
+AUC = Area under the ROC curve, quantifies overall performance of a binary classifier
 
 :arrow_right: AUC-Score of the predicted ***test*** data classes: 0.88 
 
 An AUC-Score of 0.8-0.9 is considered excellent (6).
 
-The choice of the ROC curve as a performance parameter was based on the fact that 'when you care more about the false negatives than the false positives, you should prefer the ROC curve.'(5,  p.117). 
-The potential consequences of overlooking the risk of an impending stroke and its detrimental consequences were deemed more severe than the psychological impact of incorrect, false-positive predictions. However, it's essential to emphasize that the psychological consequences of the latter should not be underestimated. Hence, it is important to communicate that this model provides probabilities rather than certainties, ensuring users understand its limitations.
+The choice of the ROC curve as a performance parameter was based on the fact that 'when you care more about the false negatives than the false positives, you should prefer the ROC curve'(5,  p.117). 
+The potential, detrimental consequences of overlooking the risk of an impending stroke were deemed more severe than the psychological impact of incorrect, false-positive predictions. However, it's essential to emphasize that the psychological consequences of the latter should not be underestimated. Hence, it is important to communicate that this model provides probabilities rather than certainties, ensuring users understand its limitations.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
