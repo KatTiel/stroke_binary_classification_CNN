@@ -14,6 +14,8 @@ The predictions made by the model are not guaranteed and are based on probabilit
 ## Dataset
 The dataset used for this model contains 12 attributes of 5110 patients. 
 
+The data was split into a **training set** (80%, 3927 records), a **validation set** (10%, 491 records) and a **test set** (10%, 491 records).
+
 Attributes:
 - id
 - gender (M/F/O)
@@ -41,8 +43,6 @@ Selected predictors:
 
 Target variable:
 - stroke
-
-The data was split into a **training set** (80%, 3927 records), a **validation set** (10%, 491 records) and a **test set** (10%, 491 records).
 
 ## Strategies to Diminish Overfitting (5)
 To avoid overfitting of the model, the following aspects were added:
