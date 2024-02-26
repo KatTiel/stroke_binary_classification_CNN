@@ -14,7 +14,7 @@ The predictions made by the model are not guaranteed and are based on probabilit
 ## Dataset
 The dataset used for this model contains 12 attributes of 5110 patients. It was split into a **training set** (80%, 3927 records), a **validation set** (10%, 491 records) and a **test set** (10%, 491 records).
 
-<u>Attributes:</u>
+*Attributes:*
 - id
 - gender (M/F/O)
 - age (y)
@@ -26,7 +26,7 @@ The dataset used for this model contains 12 attributes of 5110 patients. It was 
 - bmi (kg/m2)
 - smoking_status (formerly smoked/never smoked/smokes/Unknown)
 
-<u>Target variable:</u>
+*Target variable:*
 - stroke (0/1)
 
 ## Features
