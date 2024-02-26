@@ -12,11 +12,9 @@ The predictions made by the model are not guaranteed and are based on probabilit
 - Stroke Prediction [Dataset](https://github.com/KatTiel/stroke_binary_classification_CNN/blob/main/0_data/healthcare-dataset-stroke-data.csv) (2)
 
 ## Dataset
-The dataset used for this model contains 12 attributes of 5110 patients. 
+The dataset used for this model contains 12 attributes of 5110 patients. It was split into a **training set** (80%, 3927 records), a **validation set** (10%, 491 records) and a **test set** (10%, 491 records).
 
-The data was split into a **training set** (80%, 3927 records), a **validation set** (10%, 491 records) and a **test set** (10%, 491 records).
-
-Attributes:
+<u>Attributes:</u>
 - id
 - gender (M/F/O)
 - age (y)
@@ -28,7 +26,8 @@ Attributes:
 - bmi (kg/m2)
 - smoking_status (formerly smoked/never smoked/smokes/Unknown)
 
-- stroke (0/1) : Target variable
+<u>Target variable:</u>
+- stroke (0/1)
 
 ## Features
 Data exploration revealed that the dataset exhibits a significant imbalance of the target variable, with only 4% of individuals experiencing a stroke. To address this issue, a performance metric other than accuracy was chosen. Additionally, it was observed that hypertension and heart disease were notably underrepresented in the dataset. The choice of features for predictions was based on empirical studies that have identified these factors as significant contributors to stroke risk (3, 4).
